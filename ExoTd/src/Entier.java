@@ -1,3 +1,5 @@
+import static javafx.application.Platform.exit;
+
 public class Entier {
     public static int factorielle(int n){
         if(n==1){
@@ -39,11 +41,23 @@ public class Entier {
         }
     }
 
+    public static int multiplaction(int a,int b){
+        if(b==0||a==0){
+            return 0;
+        }
+        if (b==1){
+            return a;
+        }else{
+            return a+multiplaction(a,b-1);
+            }
+    }
+
     public static void main(String[] args){
         int a=factorielle(3);
         System.out.println(a);
         System.out.println(pair(7));
         System.out.println(sommeEntier(-5,15));
+        System.out.println(multiplaction(3,0));
 
     }
 }
