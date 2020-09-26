@@ -34,6 +34,5 @@ public class Hanoi {
         Hanoi h1= new Hanoi();
         //h1.resoudreAux(4,2,1);
         h1.resoudre(3);
-
     }
 }
