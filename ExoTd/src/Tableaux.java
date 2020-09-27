@@ -27,7 +27,7 @@ public class Tableaux {
         int len = s.length();
         Character[] array = new Character[len];
         for (int i = 0; i < len ; i++) {
-            array[i] = new Character(s.charAt(i));
+            array[i] = s.charAt(i);;
         }
 
         return array;
@@ -38,7 +38,7 @@ public class Tableaux {
     }
 
     public static void main(String[] args){
-        String str = "ii";
+        String str = "ikki";
         Character[] charArray = toCharacterArray(str);
 
         System.out.println(palindrome(charArray));
